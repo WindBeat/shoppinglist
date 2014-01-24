@@ -10,6 +10,9 @@ $('#list-items').keypress(function(event){
 //creates a list item, when click on add button and removes input value
 $('#add').click(function() {
 		var item = $('#list-items').val();
+		if(item == 0) {
+			alert("Please enter an item!");
+		}
 		$('#list-items').val('');
 		$('<li class="items"></li>').appendTo('ul').html('<img id="check" src="images/check.png">' + item + '<img id="x-mark" src="images/x-mark.png">');   
 	});

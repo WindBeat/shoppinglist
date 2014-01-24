@@ -13,8 +13,10 @@ $('#add').click(function() {
 		if(item == 0) {
 			alert("Please enter an item!");
 		}
+		else {
 		$('#list-items').val('');
 		$('<li class="items"></li>').appendTo('ul').html('<img id="check" src="images/check.png">' + item + '<img id="x-mark" src="images/x-mark.png">');   
+		}
 	});
 		
 });

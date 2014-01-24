@@ -15,7 +15,7 @@ $('#add').click(function() {
 		}
 		else {
 		$('#list-items').val('');
-		$('<li class="items"></li>').appendTo('ul').html('<img id="check" src="images/check.png" title="Click this to strike-through item">' + item + '<img id="x-mark" src="images/x-mark.png" title="Click this to remove item">');   
+		$('<li class="items"></li>').appendTo('ul').html('<img id="check" src="images/check.png" title="Click this to check off item">' + item + '<img id="x-mark" src="images/x-mark.png" title="Click this to remove item">');   
 		}
 	});
 		

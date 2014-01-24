@@ -6,6 +6,7 @@ $('#list-items').keypress(function(event){
 			$('#add').click();
 		}
 	});
+
 //creates a list item, when click on add button and removes input value
 $('#add').click(function() {
 		var item = $('#list-items').val();
@@ -14,10 +15,12 @@ $('#add').click(function() {
 	});
 		
 });
+
 //creates a strike-through on text of the selected list item, when click check img
 $(document).on("click", "#check", function() {
 	$(this).closest('li').toggleClass("strike")
 });
+
 //removes the selected list item, when click on the x-mark img
 $(document).on("click", "#x-mark", function(){
     $(this).closest('li').fadeOut(400);
